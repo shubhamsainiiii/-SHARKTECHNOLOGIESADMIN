@@ -90,7 +90,6 @@ export function AuthProvider({ children }) {
                 setUser(admin);
                 return { success: true };
             }
-
             return { success: false, message: data.message || 'Login failed' };
         } catch (err) {
             return { success: false, message: 'Cannot connect to server. Is backend running?' };
